@@ -11,7 +11,7 @@
 # Uncomment to install packages on ubuntu
 
 sudo apt-get update
-sudo apt-get -y install gawk zlib1g-dev libncurses5-dev g++ flex
+sudo apt-get -y install gawk zlib1g-dev libncurses5-dev g++ flex git
 
 # Archer C7 v2 [standard and openNODE]
 
