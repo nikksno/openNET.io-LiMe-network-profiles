@@ -1,10 +1,14 @@
-# This file is a cooking script for openNET.io | 20170519 | Nk
-#
+#!/bin/bash
+
+# This file is a cooking script for openNET.io
 # Execute from inside lime-sdk extracted folder where "cooker" is
+# All routers we use should be in this file for one touch cooking
+#
+# Started on 20170519 | Nk
 #
 # Packages still to test: haveged
 
-# Archer C7
+# Archer C7 v2 [standard and openNODE]
 
 PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
 ./cooker --flavor=lime_default --remote \
@@ -13,3 +17,73 @@ PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10
 PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
 ./cooker --flavor=lime_default --remote \
 --community=openNET.io/1144-W2PA-LIME-XXXX_ONC7 -c ar71xx/generic --profile=archer-c7-v2
+
+# 1043 ND v3 [standard and openNODE]
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=tl-wr1043nd-v3
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX_ON3N -c ar71xx/generic --profile=tl-wr1043nd-v3
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX_ON32 -c ar71xx/generic --profile=tl-wr1043nd-v3
+
+# 1043 ND v4 [standard and openNODE]
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=tl-wr1043nd-v4
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX_ON3N -c ar71xx/generic --profile=tl-wr1043nd-v4
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX_ON32 -c ar71xx/generic --profile=tl-wr1043nd-v4
+
+# WBS 210
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=wbs210
+
+# Unifi AC Lite
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=ubnt-unifiac-lite
+
+# Unifi AC Pro
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=ubnt-unifiac-pro
+
+# AR 150
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=gl-ar150
+
+# AR 300
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=gl-ar300
+
+# AR 300M
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ar71xx/generic --profile=gl-ar300m
+
+# 3020 8M
+
+PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
+./cooker --flavor=lime_default --remote \
+--community=openNET.io/1144-W2PA-LIME-XXXX -c ramips/mt7620 --profile=wt3020-8M
