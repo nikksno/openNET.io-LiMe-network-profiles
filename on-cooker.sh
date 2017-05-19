@@ -8,6 +8,11 @@
 #
 # Packages still to test: haveged
 
+# Uncomment to install packages on ubuntu
+
+sudo apt-get update
+sudo apt-get -y install gawk zlib1g-dev libncurses5-dev g++ flex
+
 # Archer C7 v2 [standard and openNODE]
 
 PKG="lime-full luci-ssl wpad authsae hostapd  ath10k-firmware-qca988x kmod-ath10k -wpad-mini" \
